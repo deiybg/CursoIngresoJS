@@ -53,6 +53,22 @@ function CalcularPrecio ()
  				default:
  					precioDescuento= precioLamparas*0.80;		
  			}
+
+ 		case 5:	
+ 			switch(marca)
+ 			{
+ 				case "ArgentinaLuz":
+ 					precioDescuento = precioLamparas*0.60;
+ 					break;
+ 				default:
+ 					precioDescuento = precioLamparas*0.70;	
+ 			}
+ 		case 6:
+ 				precioDescuento= precioLamparas *0.50;
+ 				break;
+ 				default:		
+
+
  		
  	}
  	precioLamparas = cantidadLamparas *35;
