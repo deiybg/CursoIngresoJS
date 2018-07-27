@@ -4,6 +4,19 @@ function mostrar()
 	var contador=0;
 	var acumulador=0;
 	var respuesta='si';
+	var numero;
+
+
+	while(respuesta =="si")
+	{
+		
+		numero = prompt("Ingrese un numero;");
+		numero = parseInt(numero);
+		acumulador+=numero;
+		contador++;
+		respuesta= prompt("Desea continuar: ");
+
+	}
 
 
 document.getElementById('suma').value=acumulador;
