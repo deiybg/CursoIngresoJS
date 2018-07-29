@@ -4,10 +4,9 @@ function mostrar()
 	var hora;
 
 	hora = document.getElementById('laHora').value;
-	hora = parseInt(hora);
+	
 
 	switch(hora)
-
 	{
 		case "6":
 		case "7":
@@ -24,28 +23,39 @@ function mostrar()
 		case "16":
 		case "17":	
 		case "18":
-		case "19":
-			alert("Es de tarde");
+		case "19":	
+			alert("es de tarde");
 			break;
 		case "20":
-		case "21":	
+		case "21":
 		case "22":
 		case "23":
-		case "00":	
-		case "1":
-		case "2":	
+		case "00":
+			alert("a dormir");
+		case "1":	
+		case "2":
 		case "3":
 		case "4":
 		case "5":	
-			alert("Es de noche");
+			alert("es de noche");
 			break;
+		default:
+			alert("la hora no es valida");	
 
-			default:
-			alert("La hora no es valida");
+
+
+
+
+
 
 
 
 
 
 	}
+
+
+
+
+}
 
