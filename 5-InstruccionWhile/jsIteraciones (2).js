@@ -2,12 +2,13 @@ function mostrar()
 {
 	console.log('iteración while');
 	var contador;
-	contador = 11;
+	contador = 10;
 
-	while(contador >1)
+	while(contador >0)
 	{
-		contador--;
+		
 		console.log("mensaje: " + contador);
+		contador--;
 		
 	}
 

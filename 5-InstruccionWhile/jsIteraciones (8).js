@@ -2,26 +2,37 @@ function mostrar()
 {
 
 	var contador=0;
-	var positivo=0;
-	var negativo=1;
+	var acumulador =0;
+	var acumuladorNegativo = 1;
 	var numero;
 
 	
 	var respuesta='si';
 
-	while(respuesta="si")
+	while(respuesta=="si")
 	{
 		numero = prompt("Ingrese un numero: ")
 		numero = parseInt(numero);
 		contador++;
-		acumulador+=numero;
+		if (numero>0)
+		 {
+		 	acumulador+=numero;
+		 }
+		  else 
+		  {
+		  	if (numero<0) 
+		  		{
+		  			acumuladorNegativo*=numero;
+		  		}
+		  }
 		respuesta= prompt("Desea continuar: ");
+
+
 	}
 
-	positivo = acumula
+	document.getElementById('suma').value = acumulador;
+	document.getElementById('producto').value = acumuladorNegativo;
 
 
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN
