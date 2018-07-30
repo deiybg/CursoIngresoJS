@@ -15,18 +15,33 @@ function mostrar()
 		numero = prompt("Ingrese un numero: ");
 		numero = parseInt(numero);
 		contador++;
-		acumulador+=numero;
 		
+
+	while(isNaN(numero))	
+
+		{
+
+		numero = prompt("Ingrese un numero: ");
+		numero = parseInt(numero);
+		
+		}
+
+		acumulador+=numero;
 	}
 
-
-
-
-
 	
+
 
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/5;
 
 }//FIN DE LA FUNCIÓN
+
+
+	/*while(isnan(num))
+	{
+		numero = prompt(numero);
+		numero = parseInt(numero);
+	}
+	*/
